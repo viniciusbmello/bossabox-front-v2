@@ -25,7 +25,7 @@ const SearchProvider: NextComponentType = ({ children }: AuxProps) => {
   const [onlyTags, setOnlyTags] = useState(false);
   const { data, error } = useRequest<ITools[]>({
     method: 'get',
-    url: 'http://localhost:3333/tools',
+    url: 'https://my-json-server.typicode.com/viniciusbmello/bossabox-json',
     params: !onlyTags
       ? {
           q: inputValue,
