@@ -35,7 +35,9 @@ const ToolList: React.FC<IToolList> = ({ tool }: IToolList) => {
         <ul className="card--tags">
           {tags.map(tag => (
             <li key={tag}>
-              {context.inputValue === tag ? (
+              {tag.includes(context.inputValue) &&
+              context.inputValue &&
+              context.onlyTags ? (
                 <span className="card--tag-match">
                   <span>#</span>
                   <span>{tag}</span>
