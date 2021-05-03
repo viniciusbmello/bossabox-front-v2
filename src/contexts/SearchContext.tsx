@@ -23,7 +23,7 @@ interface AuxProps {
 const SearchProvider: NextComponentType = ({ children }: AuxProps) => {
   const [inputValue, setInputValue] = useState('');
   const [onlyTags, setOnlyTags] = useState(false);
-  const { data } = useRequest<ITools[]>({
+  const { data, error } = useRequest<ITools[]>({
     method: 'get',
     url: 'http://localhost:3333/tools',
     params: !onlyTags
@@ -38,7 +38,8 @@ const SearchProvider: NextComponentType = ({ children }: AuxProps) => {
   return (
     <SearchContext.Provider
       value={{
-        results: data,
+        results: data, // tools
+        error,
         setInputValue,
         setOnlyTags,
       }}
