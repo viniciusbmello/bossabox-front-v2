@@ -15,7 +15,6 @@ const Layout = styled.div`
     border: 1px solid ${props => props.theme.colors.mostDarkestWhite};
     border-radius: 0.5rem;
     padding: 0.25rem 1rem;
-    height: 3rem;
     position: relative;
   }
 
@@ -69,12 +68,25 @@ const Layout = styled.div`
 
   #search {
     padding-left: 3rem;
-    width: 20rem;
+    width: 30rem;
+    height: 3rem;
   }
 
   .searchIcon > svg {
     width: 1.6rem;
     height: 1.6rem;
+  }
+
+  @media screen and (max-width: 570px) {
+    #search {
+      width: 18rem;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    #search {
+      width: 15rem;
+    }
   }
 `;
 

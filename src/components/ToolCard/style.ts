@@ -38,12 +38,9 @@ const Layout = styled.li`
     list-style: none !important;
   }
 
-  ul {
-    margin-top: 1rem;
-  }
-
   ul > li {
-    display: inline;
+    margin-top: 1rem;
+    display: inline-block;
   }
 
   .card--tag {

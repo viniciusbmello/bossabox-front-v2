@@ -53,10 +53,17 @@ const Layout = styled.div`
 
   .header--title > span {
     color: ${props => props.theme.colors.lightInk};
+    font-size: 1.4rem;
   }
 
   .header--left-side {
     padding-right: 2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .header--title > span {
+      display: none;
+    }
   }
 `;
 
