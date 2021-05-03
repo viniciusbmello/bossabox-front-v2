@@ -51,7 +51,7 @@ const Layout = styled.div`
   }
 
   .header--left-side {
-    padding-right: 1.5rem;
+    padding-right: 2rem;
   }
 
   @media screen and (max-width: 1100px) {
