@@ -46,6 +46,10 @@ const Layout = styled.div`
     font-size: 2rem;
   }
 
+  .header--title > span {
+    color: ${props => props.theme.colors.lightInk};
+  }
+
   .header--left-side {
     padding-right: 1.5rem;
   }
