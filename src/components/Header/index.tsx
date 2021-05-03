@@ -21,11 +21,7 @@ const Header: NextComponentType = () => {
         </div>
         <div className="header--title">
           <h1>VUTtR</h1>
-          <span>
-            Very Useful Tools
-            <br />
-            to Remember
-          </span>
+          <span>Very Useful Tools to Remember</span>
         </div>
       </div>
       <div className="header--left-side">

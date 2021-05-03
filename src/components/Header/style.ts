@@ -38,20 +38,24 @@ const Layout = styled.div`
     padding: 1rem;
   }
 
-  .header--title > * {
-    line-height: 70%;
-  }
-
   .header--title > h1 {
     font-size: 2rem;
+    line-height: 70%;
   }
 
   .header--title > span {
     color: ${props => props.theme.colors.lightInk};
+    line-height: 50%;
   }
 
   .header--left-side {
     padding-right: 1.5rem;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .header--title > span {
+      display: none;
+    }
   }
 `;
 
