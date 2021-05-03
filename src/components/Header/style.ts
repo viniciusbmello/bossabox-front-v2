@@ -10,6 +10,8 @@ const Layout = styled.div`
     justify-content: space-between;
     align-items: center;
 
+    width: 100%;
+
     background: ${props => props.theme.colors.white};
     border-bottom: 1px solid ${props => props.theme.colors.mostDarkestWhite};
   }
