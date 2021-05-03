@@ -41,8 +41,8 @@ const Layout = styled.div`
     background-color: ${props => props.theme.colors.darkerWhite};
     border: 1px solid ${props => props.theme.colors.mostDarkestWhite};
     background: ${props => props.theme.colors.darkerWhite} url('/check.svg')
-      0.2rem 0.6rem no-repeat;
-    background-size: 2.5rem;
+      0.4rem 0.8rem no-repeat;
+    background-size: 2rem;
   }
 
   input[type='checkbox'] + span {
