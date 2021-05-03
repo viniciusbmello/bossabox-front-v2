@@ -8,6 +8,7 @@ const Layout = styled.div`
   }
 
   input[type='search'] {
+    user-select: auto;
     box-sizing: border-box;
     outline: none;
     background: ${props => props.theme.colors.darkerWhite};

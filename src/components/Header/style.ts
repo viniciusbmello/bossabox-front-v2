@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 const Layout = styled.div`
+  * {
+    user-select: none;
+  }
+
   & {
     display: flex;
     justify-content: space-between;
