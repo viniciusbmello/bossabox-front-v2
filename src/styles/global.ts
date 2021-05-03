@@ -20,6 +20,18 @@ const GlobalStyle = createGlobalStyle`
     font: 400 1.6rem 'Source Sans Pro', sans-serif;
     color: ${props => props.theme.colors.ink};
   }
+
+  @media screen and (min-width: 720px) {
+    :root {
+      font-size: 75%;
+    }
+  }
+
+  @media screen and (min-width: 1100px) {
+    :root {
+      font-size: 87.5%;
+    }
+  }
 `;
 
 export default GlobalStyle;

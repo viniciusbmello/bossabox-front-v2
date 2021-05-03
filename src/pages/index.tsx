@@ -1,30 +1,12 @@
 import React from 'react';
 import { NextPage } from 'next';
+import ToolList from '../components/ToolList';
+import Layout from './style';
 
-import { useSearch } from '../contexts/SearchContext';
-
-const Home: NextPage = () => {
-  const context = useSearch();
-  return (
-    <>
-      <ul>
-        {context.results
-          ? context.results.map(tool => (
-              <li key={tool.id}>
-                <p>{tool.title}</p>
-                <p>{tool.link}</p>
-                <p>{tool.description}</p>
-                <p>
-                  {tool.tags
-                    ? tool.tags.map(tag => <span key={tag}>#{tag} </span>)
-                    : ''}
-                </p>
-              </li>
-            ))
-          : 'loading...'}
-      </ul>
-    </>
-  );
-};
+const Home: NextPage = () => (
+  <Layout>
+    <ToolList />
+  </Layout>
+);
 
 export default Home;

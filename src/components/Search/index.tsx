@@ -28,12 +28,7 @@ const SearchBar: NextComponentType = () => {
     <Layout className="header">
       <label htmlFor="search">
         <span className="searchIcon">
-          <SearchIcon
-            ref={searchIcon}
-            src="/search.svg"
-            width={16}
-            height="auto"
-          />
+          <SearchIcon ref={searchIcon} src="/search.svg" />
         </span>
         <input
           id="search"

@@ -29,6 +29,11 @@ const Layout = styled.div`
     border-right: 1px solid ${props => props.theme.colors.mostDarkestWhite};
   }
 
+  .header--logo a > svg {
+    width: 4rem;
+    height: 4rem;
+  }
+
   .header--title {
     padding: 1rem;
   }

@@ -8,7 +8,7 @@ const SearchContext = React.createContext(undefined);
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const useSearch = (): any => useContext(SearchContext);
 
-interface ITools {
+export interface ITools {
   id: number;
   title: string;
   link: string;
@@ -25,7 +25,8 @@ const SearchProvider: NextComponentType = ({ children }: AuxProps) => {
   const [onlyTags, setOnlyTags] = useState(false);
   const { data, error } = useRequest<ITools[]>({
     method: 'get',
-    url: 'https://my-json-server.typicode.com/viniciusbmello/bossabox-json/tools',
+    url:
+      'https://my-json-server.typicode.com/viniciusbmello/bossabox-json/tools',
     params: !onlyTags
       ? {
           q: inputValue,
