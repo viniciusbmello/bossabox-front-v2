@@ -46,7 +46,12 @@ const SearchBar: NextComponentType = () => {
           checked={tagsOnly}
           name="onlyTags"
         />
-        <span>tags only</span>
+        <span>
+          tags
+          <br />
+          only?
+        </span>
+        <br />
       </label>
     </Layout>
   );

@@ -58,6 +58,7 @@ const Layout = styled.div`
   label > span {
     position: relative;
     display: inline;
+    line-height: 90%;
   }
 
   label > span:first-child {
