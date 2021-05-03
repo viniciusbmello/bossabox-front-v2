@@ -41,7 +41,9 @@ const SearchProvider: NextComponentType = ({ children }: AuxProps) => {
       value={{
         results: data, // tools
         error,
+        inputValue,
         setInputValue,
+        onlyTags,
         setOnlyTags,
       }}
     >

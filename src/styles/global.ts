@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  /* Mobile First */
   :root {
     font-size: 62.5%
   }
@@ -19,18 +18,6 @@ const GlobalStyle = createGlobalStyle`
   body, input, button, textarea {
     font: 400 1.6rem sans-serif;
     color: ${props => props.theme.colors.ink};
-  }
-
-  @media screen and (min-width: 720px) {
-    :root {
-      font-size: 75%;
-    }
-  }
-
-  @media screen and (min-width: 1100px) {
-    :root {
-      font-size: 87.5%;
-    }
   }
 `;
 

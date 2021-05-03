@@ -6,13 +6,7 @@ const Layout = styled.div`
     flex-direction: column;
     height: 100%;
     margin: 0 auto;
-    padding: 2.5rem 2rem;
-  }
-
-  @media screen and (min-width: 1100px) {
-    & {
-      max-width: 992px;
-    }
+    padding: 2.5rem 2rem 1rem;
   }
 `;
 
