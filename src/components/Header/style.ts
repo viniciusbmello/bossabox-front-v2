@@ -25,16 +25,16 @@ const Layout = styled.div`
   }
 
   .header--logo {
-    padding: 0.75rem 1.25rem;
+    padding: 0.75rem 0.75rem;
     border-right: 1px solid ${props => props.theme.colors.mostDarkestWhite};
   }
 
   .header--title {
-    padding: 0.5rem;
+    padding: 1rem;
   }
 
   .header--title > * {
-    line-height: 80%;
+    line-height: 70%;
   }
 
   .header--title > h1 {
@@ -42,7 +42,7 @@ const Layout = styled.div`
   }
 
   .header--left-side {
-    padding-right: 1rem;
+    padding-right: 1.5rem;
   }
 `;
 

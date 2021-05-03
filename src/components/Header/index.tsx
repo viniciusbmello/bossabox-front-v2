@@ -16,7 +16,7 @@ const Header: NextComponentType = () => {
       <div className="header--right-side">
         <div className="header--logo">
           <a href="https://bossabox.com/" target="_blank" rel="noreferrer">
-            <LogoVUTtR ref={logo} src="/logo.svg" width={32} height="auto" />
+            <LogoVUTtR ref={logo} src="/logo.svg" width="4rem" height="4rem" />
           </a>
         </div>
         <div className="header--title">
