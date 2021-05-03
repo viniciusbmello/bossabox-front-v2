@@ -48,6 +48,11 @@ export default class MyDocument extends Document {
             name="description"
             content="Very Useful Tools to Remember. Uma aplicação simples para gerenciar ferramentas com seus respectivos nomes, links, descrições e tags."
           />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />

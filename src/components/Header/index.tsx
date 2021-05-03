@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import SVG, { Props as SVGProps } from 'react-inlinesvg';
 import { NextComponentType } from 'next';
 import Layout from './style';
+import SearchBar from '../Search';
 
 const LogoVUTtR = React.forwardRef<SVGElement, SVGProps>((props, ref) => (
   <SVG innerRef={ref} title="Logo" {...props} />
@@ -22,7 +23,9 @@ const Header: NextComponentType = () => {
           <span>Very Useful Tools to Remember</span>
         </div>
       </div>
-      <div className="header--left-side">Search</div>
+      <div className="header--left-side">
+        <SearchBar />
+      </div>
     </Layout>
   );
 };

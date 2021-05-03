@@ -36,6 +36,10 @@ const Layout = styled.div`
   .header--title > h1 {
     font-size: 2rem;
   }
+
+  .header--left-side {
+    padding-right: 1rem;
+  }
 `;
 
 export default Layout;

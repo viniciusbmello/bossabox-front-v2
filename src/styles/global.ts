@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body, input, button, textarea {
-    font: 400 1.6rem sans-serif;
+    font: 400 1.6rem 'Source Sans Pro', sans-serif;
     color: ${props => props.theme.colors.ink};
   }
 `;
