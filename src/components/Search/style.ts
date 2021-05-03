@@ -69,11 +69,18 @@ const Layout = styled.div`
 
   #search {
     padding-left: 3rem;
+    width: 30rem;
   }
 
   .searchIcon > svg {
     width: 1.6rem;
     height: 1.6rem;
+  }
+
+  @media screen and (max-width: 1100px) {
+    #search {
+      width: 15rem;
+    }
   }
 `;
 
