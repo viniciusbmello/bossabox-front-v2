@@ -1,8 +1,6 @@
-import { NextComponentType, NextPage } from 'next';
 import React from 'react';
+import { NextPage } from 'next';
 
-const Comp: NextComponentType = () => <h1>First Commit</h1>;
-
-const Home: NextPage = () => <Comp />;
+const Home: NextPage = () => <h1>Teste</h1>;
 
 export default Home;

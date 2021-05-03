@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/assets/logoVUTtR.js", "src/assets/logoVUTtR.js"  ],
   "exclude": [
     "node_modules"
   ]
