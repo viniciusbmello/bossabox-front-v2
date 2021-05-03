@@ -1,34 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# VUTtR Front-End
 
-## Getting Started
+Este repositório contém uma Aplicação Front-End [React.js](https://reactjs.org/) utilizando o Framework [Next.js](https://nextjs.org/) para o desafio de Front-End do [BossaBox](https://bossabox.com/).
 
-First, run the development server:
+Requisitos:
+* [Node.js 10.13+](https://nodejs.org/)
 
-```bash
-npm run dev
-# or
-yarn dev
+## Demo
+
+Um deploy da aplicação pode ser encontrado hospedada nos servidores da [Vercel](https://vercel.com/). 
+* Para acessar clique aqui: [VUTtR](https://vuttr.codar.space/).
+
+## Como executar
+Faça o clone/download deste repositório:
+```git
+git clone https://github.com/viniciusbmello/bossabox-front.git
 ```
+... ou faça download do código fonte em formato zip: [bossabox-front.zip](https://github.com/viniciusbmello/bossabox-front/archive/refs/heads/main.zip).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse o diretório do projeto e execute um dos seguinte comando para fazer download das dependências do projeto:
+* `npm install` ou
+* `yarn`
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Para rodar a Aplicação, execute:
+* `npm run dev` ou
+* `yarn dev`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+A página fica localizada em [`http://localhost:3000`](http://localhost:3000).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## API
+Este projeto foi construído utilizando a API fornecida pela [BossaBox](https://bossabox.com/) no desafio de Front-End. Você pode encontra-la e baixa-la no seguinte endereço:
+* [`challenge-fake-api`](https://gitlab.com/bossabox/challenge-fake-api/)
 
-## Learn More
+As instruções de como executar a Aplicação Back-End e as rotas da API podem ser encontradas no [README.md](https://gitlab.com/bossabox/challenge-fake-api/-/blob/master/README.md) do repositório.
 
-To learn more about Next.js, take a look at the following resources:
+## O Desafio
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Sua tarefa é construir um front-end para a aplicação VUTtR (Very Useful Tools to Remember). A aplicação é um simples repositório para gerenciar ferramentas com seus respectivos nomes, links, descrições e tags. Utilize um repositório Git (público, de preferência) para versionamento e disponibilização do código.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+O front-end deve ser construído utilizando qualquer framework JavaScript de sua preferência (React, Vue.js, Angular, etc...), utilizando [este style guide](https://xd.adobe.com/spec/6a82c840-1813-4b23-6919-2ac91409d104-1cb3/grid) e seguindo os wireframes apresentados abaixo.
 
-## Deploy on Vercel
+# User Stories e wireframes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. O usuário deve poder ver a lista de todas as ferramentas cadastradas:
+![img](https://bossabox-uploads.s3-sa-east-1.amazonaws.com/challenges/1-home.png)
+2. O usuário deve poder adicionar uma nova ferramenta
+![img](https://bossabox-uploads.s3-sa-east-1.amazonaws.com/challenges/2-add-tool.png)
+3. O usuário deve poder remover uma ferramenta
+![img](https://bossabox-uploads.s3-sa-east-1.amazonaws.com/challenges/3-remove-tool.png)
+4. O usuário deve poder buscar ferramentas dinamicamente (global ou utilizando apenas tags)
+![img](https://bossabox-uploads.s3-sa-east-1.amazonaws.com/challenges/4-search.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Agradecimentos
+
+Obrigado ao pessoal da [BossaBox](https://bossabox.com/) pela oportunidade.
