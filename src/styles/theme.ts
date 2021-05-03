@@ -2,8 +2,9 @@ const theme = {
   title: 'default',
 
   colors: {
-    // Shadows
+    // Alpha
     shadow: '#0000000d',
+    transparent: '#00000000',
     // Whites
     white: '#FFFFFF',
     darkWhite: '#FCFCFD',
