@@ -13,9 +13,13 @@ const ToolList: React.FC<IToolList> = ({ tool }: IToolList) => {
     <Layout>
       <div className="card">
         <div className="card--header">
-          <a href={link} target="_blank" rel="noreferrer">
+          {link ? (
+            <a href={link} target="_blank" rel="noreferrer">
+              <h1 className="card--title">{title}</h1>
+            </a>
+          ) : (
             <h1 className="card--title">{title}</h1>
-          </a>
+          )}
         </div>
         <p className="card--description">{description}</p>
         <ul className="card--tags">
