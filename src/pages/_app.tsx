@@ -5,7 +5,9 @@ import { AppProps } from 'next/app';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from '../styles/global';
 import theme from '../styles/theme';
+
 import Header from '../components/Header';
+import SearchProvider from '../contexts/SearchContext';
 
 const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => (
   <ThemeProvider theme={theme}>
@@ -13,8 +15,10 @@ const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => (
       <title>BossaBox Front-End</title>
     </Head>
     <GlobalStyle />
-    <Header />
-    <Component {...pageProps} />
+    <SearchProvider>
+      <Header />
+      <Component {...pageProps} />
+    </SearchProvider>
   </ThemeProvider>
 );
 

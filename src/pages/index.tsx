@@ -1,28 +1,15 @@
 import React from 'react';
 import { NextPage } from 'next';
-import useRequest from '../utils/useRequest';
 
-interface ITools {
-  id: number;
-  title: string;
-  link: string;
-  description: string;
-  tags: Array<string>;
-}
+import { useSearch } from '../contexts/SearchContext';
 
 const Home: NextPage = () => {
-  const { data, error } = useRequest<ITools[]>({
-    method: 'get',
-    url: 'http://localhost:3333/tools',
-  });
-
-  if (error) return <div>failed...</div>;
-
+  const context = useSearch();
   return (
     <>
       <ul>
-        {data
-          ? data.map(tool => (
+        {context.results
+          ? context.results.map(tool => (
               <li key={tool.id}>
                 <p>{tool.title}</p>
                 <p>{tool.link}</p>

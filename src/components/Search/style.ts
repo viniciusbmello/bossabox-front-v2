@@ -7,7 +7,7 @@ const Layout = styled.div`
     align-items: center;
   }
 
-  input[type='text'] {
+  input[type='search'] {
     box-sizing: border-box;
     outline: none;
     background: ${props => props.theme.colors.darkerWhite};

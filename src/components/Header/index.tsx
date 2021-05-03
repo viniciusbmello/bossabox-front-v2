@@ -10,6 +10,7 @@ const LogoVUTtR = React.forwardRef<SVGElement, SVGProps>((props, ref) => (
 
 const Header: NextComponentType = () => {
   const logo = useRef<SVGElement>(null);
+
   return (
     <Layout className="header">
       <div className="header--right-side">
