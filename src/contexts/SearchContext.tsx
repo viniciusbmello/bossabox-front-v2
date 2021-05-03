@@ -22,12 +22,17 @@ interface AuxProps {
 
 const SearchProvider: NextComponentType = ({ children }: AuxProps) => {
   const [inputValue, setInputValue] = useState('');
+  const [onlyTags, setOnlyTags] = useState(false);
   const { data } = useRequest<ITools[]>({
     method: 'get',
     url: 'http://localhost:3333/tools',
-    params: {
-      q: inputValue,
-    },
+    params: !onlyTags
+      ? {
+          q: inputValue,
+        }
+      : {
+          tags_like: inputValue,
+        },
   });
 
   return (
@@ -35,6 +40,7 @@ const SearchProvider: NextComponentType = ({ children }: AuxProps) => {
       value={{
         results: data,
         setInputValue,
+        setOnlyTags,
       }}
     >
       {children}

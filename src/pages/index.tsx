@@ -15,7 +15,9 @@ const Home: NextPage = () => {
                 <p>{tool.link}</p>
                 <p>{tool.description}</p>
                 <p>
-                  {tool.tags ? tool.tags.map(tag => <span>#{tag} </span>) : ''}
+                  {tool.tags
+                    ? tool.tags.map(tag => <span key={tag}>#{tag} </span>)
+                    : ''}
                 </p>
               </li>
             ))
