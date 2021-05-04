@@ -94,6 +94,12 @@ const Layout = styled.div`
       width: 15rem;
     }
   }
+
+  @media screen and (max-width: 420px) {
+    #search {
+      width: 12rem;
+    }
+  }
 `;
 
 export default Layout;
