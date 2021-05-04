@@ -42,8 +42,9 @@ export default class MyDocument extends Document {
         <Head>
           <link
             rel="preload"
-            href="https://my-json-server.typicode.com/viniciusbmello/bossabox-json/tools?q=	"
-            as="fetch"
+            href="https://vuttr.codar.space/logo.svg"
+            as="image"
+            type="fetch"
           />
           <meta charSet="utf-8" />
           {/* SEO Meta Tags */}
