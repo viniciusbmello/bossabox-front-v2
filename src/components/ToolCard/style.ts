@@ -7,7 +7,7 @@ const Layout = styled.li`
 
   .card {
     margin-bottom: 1rem;
-    padding: 1rem 1rem 1.5rem;
+    padding: 2rem 2rem 2.5rem 3rem;
     background: ${props => props.theme.colors.white};
     border: 1px solid ${props => props.theme.colors.mostDarkestWhite};
     box-shadow: 0 0.5rem 1rem ${props => props.theme.colors.shadow};
@@ -19,6 +19,7 @@ const Layout = styled.li`
   }
 
   .card--title {
+    font-weight: 400;
     color: ${props => props.theme.colors.darkerBlue};
   }
 
@@ -31,6 +32,10 @@ const Layout = styled.li`
     width: 2.2rem;
     height: 2.2rem;
     margin-left: 0.5rem;
+  }
+
+  .card--description {
+    padding-top: 0.5rem;
   }
 
   ul,
