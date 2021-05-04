@@ -8,6 +8,9 @@ const Layout = styled.div`
   }
 
   input[type='search'] {
+    -moz-appearance: none; /* older firefox */
+    -webkit-appearance: none; /* safari, chrome, edge and ie mobile */
+    appearance: none; /* rest */
     user-select: auto;
     box-sizing: border-box;
     outline: none;
@@ -16,7 +19,6 @@ const Layout = styled.div`
     border-radius: 0.5rem;
     padding: 0.25rem 1rem;
     position: relative;
-    -webkit-appearance: search;
   }
 
   input[type='checkbox']:focus {
@@ -24,6 +26,9 @@ const Layout = styled.div`
   }
 
   input[type='checkbox'] {
+    -moz-appearance: none; /* older firefox */
+    -webkit-appearance: none; /* safari, chrome, edge and ie mobile */
+    appearance: none; /* rest */
     border: 1px solid ${props => props.theme.colors.mostDarkestWhite};
     background-color: ${props => props.theme.colors.darkerWhite};
     border-radius: 0.5rem;
