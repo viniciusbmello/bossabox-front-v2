@@ -47,6 +47,7 @@ export default class MyDocument extends Document {
             name="description"
             content="Very Useful Tools to Remember. Uma aplicação simples para gerenciar ferramentas com seus respectivos nomes, links, descrições e tags."
           />
+          <link rel="preconnect" href="https://my-json-server.typicode.com" />
         </Head>
         <body>
           <Main />
