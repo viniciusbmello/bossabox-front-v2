@@ -64,12 +64,9 @@ export default class MyDocument extends Document {
           <link
             rel="preload"
             href="https://my-json-server.typicode.com/viniciusbmello/bossabox-json/tools?q="
+            as="fetch"
           />
           <link rel="prefetch" href="https://vuttr.codar.space/check.svg" />
-          <link
-            rel="prefetch"
-            href="https://my-json-server.typicode.com/viniciusbmello/bossabox-json/tools?tags_like="
-          />
           <meta charSet="utf-8" />
           {/* SEO Meta Tags */}
           <meta itemProp="name" content="BossaBox Front-End VUTtR" />
