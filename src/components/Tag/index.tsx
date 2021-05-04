@@ -18,7 +18,7 @@ const Tag: React.FC<ITag> = ({ tag }: ITag) => {
       {tag.includes(context.inputValue) &&
       context.inputValue &&
       context.onlyTags ? (
-        <span className="card--tag-match">
+        <span className="card--tag card--tag-match">
           <span>#</span>
           <span>{tag}</span>
         </span>
