@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 
@@ -9,7 +9,7 @@ import theme from '../styles/theme';
 import Header from '../components/Header';
 import SearchProvider from '../contexts/SearchContext';
 
-const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => (
+const App: FC<AppProps> = ({ Component, pageProps }: AppProps) => (
   <ThemeProvider theme={theme}>
     <Head>
       <title>BossaBox Front-End</title>

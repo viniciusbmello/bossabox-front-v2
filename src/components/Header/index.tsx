@@ -1,10 +1,10 @@
-import React, { useRef } from 'react';
+import { useRef, forwardRef } from 'react';
 import SVG, { Props as SVGProps } from 'react-inlinesvg';
 import { NextComponentType } from 'next';
 import Layout from './style';
 import SearchBar from '../Search';
 
-const LogoVUTtR = React.forwardRef<SVGElement, SVGProps>((props, ref) => (
+const LogoVUTtR = forwardRef<SVGElement, SVGProps>((props, ref) => (
   <SVG innerRef={ref} title="Logo" {...props} />
 ));
 

@@ -1,11 +1,11 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState, forwardRef, ChangeEvent } from 'react';
 import SVG, { Props as SVGProps } from 'react-inlinesvg';
 import { NextComponentType } from 'next';
 import Layout from './style';
 
 import { useSearch } from '../../contexts/SearchContext';
 
-const SearchIcon = React.forwardRef<SVGElement, SVGProps>((props, ref) => (
+const SearchIcon = forwardRef<SVGElement, SVGProps>((props, ref) => (
   <SVG innerRef={ref} title="Search" {...props} />
 ));
 
@@ -14,7 +14,7 @@ const SearchBar: NextComponentType = () => {
   const context = useSearch();
   const [tagsOnly, setTagsOnly] = useState(false);
 
-  function handleSearchChange(e: React.ChangeEvent<HTMLInputElement>): void {
+  function handleSearchChange(e: ChangeEvent<HTMLInputElement>): void {
     e.target.value = e.target.value.toLowerCase();
     context.setInputValue(e.target.value);
   }

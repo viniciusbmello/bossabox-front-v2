@@ -1,9 +1,15 @@
 import { NextComponentType } from 'next';
-import React, { ReactChild, ReactChildren, useContext, useState } from 'react';
+import {
+  ReactChild,
+  ReactChildren,
+  useContext,
+  useState,
+  createContext,
+} from 'react';
 
 import useRequest from '../utils/useRequest';
 
-const SearchContext = React.createContext(undefined);
+const SearchContext = createContext(undefined);
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const useSearch = (): any => useContext(SearchContext);

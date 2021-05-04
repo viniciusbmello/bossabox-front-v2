@@ -1,4 +1,3 @@
-import React from 'react';
 import { NextComponentType } from 'next';
 import Layout from './style';
 

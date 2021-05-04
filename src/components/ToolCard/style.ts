@@ -27,7 +27,7 @@ const Layout = styled.li`
   }
 
   .card--title > svg {
-    transform: rotate(30deg);
+    transform: rotate(15deg);
     width: 2.2rem;
     height: 2.2rem;
     margin-left: 0.5rem;
