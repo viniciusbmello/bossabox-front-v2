@@ -21,7 +21,7 @@ const SearchBar: NextComponentType = () => {
   }, [context.onlyTags, context.inputValue]); // Apenas re-execute o efeito quando o count mudar
 
   function handleSearchChange(e: ChangeEvent<HTMLInputElement>): void {
-    e.target.value = e.target.value.toLowerCase();
+    e.target.value = e.target.value.replace(/[^a-z0-9]/gi, '').toLowerCase();
     context.setInputValue(e.target.value);
   }
 
