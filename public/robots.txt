@@ -1,0 +1,6 @@
+Sitemap: https://vuttr.codar.space/api/sitemap
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*
