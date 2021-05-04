@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import Layout from './style';
 import { useSearch } from '../../contexts/SearchContext';
 
@@ -6,11 +5,16 @@ interface ITag {
   tag: string;
 }
 
-const Tag: FC<ITag> = ({ tag }: ITag) => {
+const Tag: React.FC<ITag> = ({ tag }: ITag) => {
   const context = useSearch();
 
+  function handleTagClicked(e: React.MouseEvent<HTMLLIElement>): void {
+    context.setOnlyTags(true);
+    context.setInputValue(e.currentTarget.dataset.id);
+  }
+
   return (
-    <Layout key={tag}>
+    <Layout key={tag} onClick={handleTagClicked} data-id={tag}>
       {tag.includes(context.inputValue) &&
       context.inputValue &&
       context.onlyTags ? (

@@ -1,4 +1,4 @@
-import { useRef, useState, forwardRef, ChangeEvent } from 'react';
+import { useRef, useState, forwardRef, ChangeEvent, useEffect } from 'react';
 import SVG, { Props as SVGProps } from 'react-inlinesvg';
 import { NextComponentType } from 'next';
 import Layout from './style';
@@ -12,7 +12,13 @@ const SearchIcon = forwardRef<SVGElement, SVGProps>((props, ref) => (
 const SearchBar: NextComponentType = () => {
   const searchIcon = useRef<SVGElement>(null);
   const context = useSearch();
-  const [tagsOnly, setTagsOnly] = useState(false);
+  const [tagsOnly, setTagsOnly] = useState(context.onlyTags);
+  const [inputValue, setInputValue] = useState(context.inputValue);
+
+  useEffect(() => {
+    setTagsOnly(context.onlyTags);
+    setInputValue(context.inputValue);
+  }, [context.onlyTags, context.inputValue]); // Apenas re-execute o efeito quando o count mudar
 
   function handleSearchChange(e: ChangeEvent<HTMLInputElement>): void {
     e.target.value = e.target.value.toLowerCase();
@@ -35,6 +41,7 @@ const SearchBar: NextComponentType = () => {
           type="search"
           placeholder="Search"
           onChange={handleSearchChange}
+          value={inputValue}
           name="search"
         />
       </label>

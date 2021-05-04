@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 const Layout = styled.li`
+  & {
+    cursor: pointer;
+  }
+
   .card--tag {
     padding: 0.4rem 0.7rem 0.5rem;
     margin-right: 0.5rem;
@@ -10,9 +14,6 @@ const Layout = styled.li`
   }
 
   .card--tag-match {
-    padding: 0.4rem 0.7rem 0.5rem;
-    margin-right: 0.5rem;
-    border-radius: 0.5rem;
     background: ${props => props.theme.colors.yellow};
     color: ${props => props.theme.colors.white};
   }
