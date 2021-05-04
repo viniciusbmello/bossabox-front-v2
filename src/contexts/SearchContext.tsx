@@ -1,11 +1,5 @@
 import { NextComponentType } from 'next';
-import {
-  ReactChild,
-  ReactChildren,
-  useContext,
-  useState,
-  createContext,
-} from 'react';
+import { useContext, useState, createContext } from 'react';
 
 import useRequest from '../utils/useRequest';
 
@@ -23,7 +17,7 @@ export interface ITools {
 }
 
 interface AuxProps {
-  children: ReactChild | ReactChildren;
+  children: React.ReactChild | React.ReactChildren;
 }
 
 const SearchProvider: NextComponentType = ({ children }: AuxProps) => {

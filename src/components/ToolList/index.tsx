@@ -1,5 +1,4 @@
 import { NextComponentType } from 'next';
-
 import { useSearch } from '../../contexts/SearchContext';
 import ToolCard from '../ToolCard';
 import Layout from './style';

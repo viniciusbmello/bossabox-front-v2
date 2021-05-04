@@ -1,4 +1,4 @@
-import { useRef, useState, forwardRef, ChangeEvent, useEffect } from 'react';
+import { useRef, useState, forwardRef, useEffect } from 'react';
 import SVG, { Props as SVGProps } from 'react-inlinesvg';
 import { NextComponentType } from 'next';
 import Layout from './style';
@@ -20,7 +20,7 @@ const SearchBar: NextComponentType = () => {
     setInputValue(context.inputValue);
   }, [context.onlyTags, context.inputValue]); // Apenas re-execute o efeito quando o count mudar
 
-  function handleSearchChange(e: ChangeEvent<HTMLInputElement>): void {
+  function handleSearchChange(e: React.ChangeEvent<HTMLInputElement>): void {
     e.target.value = e.target.value.replace(/[^a-z0-9]/gi, '').toLowerCase();
     context.setInputValue(e.target.value);
   }

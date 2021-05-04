@@ -1,4 +1,4 @@
-import { useRef, FC, forwardRef } from 'react';
+import { useRef, forwardRef } from 'react';
 import SVG, { Props as SVGProps } from 'react-inlinesvg';
 import Layout from './style';
 import { ITools } from '../../contexts/SearchContext';
@@ -12,7 +12,7 @@ interface IToolList {
   tool: ITools;
 }
 
-const ToolList: FC<IToolList> = ({ tool }: IToolList) => {
+const ToolList: React.FC<IToolList> = ({ tool }: IToolList) => {
   const linkIcon = useRef<SVGElement>(null);
   const { title, link, description, tags } = tool;
 
