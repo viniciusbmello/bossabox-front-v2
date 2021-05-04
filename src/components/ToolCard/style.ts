@@ -7,7 +7,7 @@ const Layout = styled.li`
 
   .card {
     margin-bottom: 1rem;
-    padding: 2rem 2rem 3rem 3rem;
+    padding: 1rem 1rem 2rem 2rem;
     background: ${props => props.theme.colors.white};
     border: 1px solid ${props => props.theme.colors.mostDarkestWhite};
     box-shadow: 0 0.5rem 1rem ${props => props.theme.colors.shadow};
