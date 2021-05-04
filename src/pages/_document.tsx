@@ -41,9 +41,21 @@ export default class MyDocument extends Document {
       <Html lang="pt">
         <Head>
           <link rel="preload" href="https://vuttr.codar.space/favicon.ico" />
-          <link rel="preload" href="https://vuttr.codar.space/attach.svg" />
-          <link rel="preload" href="https://vuttr.codar.space/logo.svg" />
-          <link rel="preload" href="https://vuttr.codar.space/search.svg" />
+          <link
+            rel="preload"
+            href="https://vuttr.codar.space/attach.svg"
+            as="fetch"
+          />
+          <link
+            rel="preload"
+            href="https://vuttr.codar.space/logo.svg"
+            as="fetch"
+          />
+          <link
+            rel="preload"
+            href="https://vuttr.codar.space/search.svg"
+            as="fetch"
+          />
           <link rel="preconnect" href="https://my-json-server.typicode.com/" />
           <link
             rel="dns-prefetch"
