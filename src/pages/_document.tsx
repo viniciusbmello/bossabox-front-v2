@@ -40,6 +40,11 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt">
         <Head>
+          <link
+            rel="preload"
+            href="https://my-json-server.typicode.com/viniciusbmello/bossabox-json/tools?q=	"
+            as="fetch"
+          />
           <meta charSet="utf-8" />
           {/* SEO Meta Tags */}
           <meta itemProp="name" content="BossaBox Front-End VUTtR" />
