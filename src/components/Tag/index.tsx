@@ -19,12 +19,12 @@ const Tag: React.FC<ITag> = ({ tag }: ITag) => {
       context.inputValue &&
       context.onlyTags ? (
         <span className="card--tag card--tag-match">
-          <span>#</span>
+          <span className="card--tag-hashtag">#</span>
           <span>{tag}</span>
         </span>
       ) : (
         <span className="card--tag">
-          <span>#</span>
+          <span className="card--tag-hashtag">#</span>
           <span>{tag}</span>
         </span>
       )}

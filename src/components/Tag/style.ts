@@ -6,6 +6,7 @@ const Layout = styled.li`
   }
 
   .card--tag {
+    font-size: 1.4rem;
     padding: 0.4rem 0.7rem 0.5rem;
     margin-right: 0.5rem;
     border-radius: 0.5rem;
@@ -18,8 +19,8 @@ const Layout = styled.li`
     color: ${props => props.theme.colors.white};
   }
 
-  ul > li > span span:first-child {
-    font-size: 1.4rem;
+  .card--tag-hashtag:first-child {
+    font-size: 1.2rem;
     padding-right: 0.2rem;
   }
 `;
