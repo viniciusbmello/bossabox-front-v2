@@ -16,6 +16,7 @@ const Layout = styled.div`
     border-radius: 0.5rem;
     padding: 0.25rem 1rem;
     position: relative;
+    -webkit-appearance: search;
   }
 
   input[type='checkbox']:focus {
