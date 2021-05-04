@@ -40,33 +40,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt">
         <Head>
-          <link rel="preload" href="https://vuttr.codar.space/favicon.ico" />
-          <link
-            rel="preload"
-            href="https://vuttr.codar.space/attach.svg"
-            as="fetch"
-          />
-          <link
-            rel="preload"
-            href="https://vuttr.codar.space/logo.svg"
-            as="fetch"
-          />
-          <link
-            rel="preload"
-            href="https://vuttr.codar.space/search.svg"
-            as="fetch"
-          />
-          <link rel="preconnect" href="https://my-json-server.typicode.com/" />
-          <link
-            rel="dns-prefetch"
-            href="https://my-json-server.typicode.com/"
-          />
-          <link
-            rel="preload"
-            href="https://my-json-server.typicode.com/viniciusbmello/bossabox-json/tools?q="
-            as="fetch"
-          />
-          <link rel="prefetch" href="https://vuttr.codar.space/check.svg" />
           <meta charSet="utf-8" />
           {/* SEO Meta Tags */}
           <meta itemProp="name" content="BossaBox Front-End VUTtR" />
