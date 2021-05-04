@@ -41,21 +41,9 @@ export default class MyDocument extends Document {
       <Html lang="pt">
         <Head>
           <link rel="preload" href="https://vuttr.codar.space/favicon.ico" />
-          <link
-            rel="preload"
-            href="https://vuttr.codar.space/attach.svg"
-            as="image"
-          />
-          <link
-            rel="preload"
-            href="https://vuttr.codar.space/logo.svg"
-            as="image"
-          />
-          <link
-            rel="preload"
-            href="https://vuttr.codar.space/search.svg"
-            as="image"
-          />
+          <link rel="preload" href="https://vuttr.codar.space/attach.svg" />
+          <link rel="preload" href="https://vuttr.codar.space/logo.svg" />
+          <link rel="preload" href="https://vuttr.codar.space/search.svg" />
           <link rel="preconnect" href="https://my-json-server.typicode.com/" />
           <link
             rel="dns-prefetch"
@@ -65,11 +53,7 @@ export default class MyDocument extends Document {
             rel="preload"
             href="https://my-json-server.typicode.com/viniciusbmello/bossabox-json/tools?q="
           />
-          <link
-            rel="prefetch"
-            href="https://vuttr.codar.space/check.svg"
-            as="image"
-          />
+          <link rel="prefetch" href="https://vuttr.codar.space/check.svg" />
           <link
             rel="prefetch"
             href="https://my-json-server.typicode.com/viniciusbmello/bossabox-json/tools?tags_like="
