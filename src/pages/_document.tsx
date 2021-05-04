@@ -40,10 +40,42 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt">
         <Head>
+          <link
+            rel="preload"
+            href="https://https://vuttr.codar.space/favicon.ico"
+          />
+          <link
+            rel="preload"
+            href="https://https://vuttr.codar.space/attach.svg"
+            as="image"
+          />
+          <link
+            rel="preload"
+            href="https://https://vuttr.codar.space/logo.svg"
+            as="image"
+          />
+          <link
+            rel="preload"
+            href="https://https://vuttr.codar.space/search.svg"
+            as="image"
+          />
           <link rel="preconnect" href="https://my-json-server.typicode.com/" />
+          <link
+            rel="dns-prefetch"
+            href="https://my-json-server.typicode.com/"
+          />
           <link
             rel="preload"
             href="https://my-json-server.typicode.com/viniciusbmello/bossabox-json/tools?q="
+          />
+          <link
+            rel="prefetch"
+            href="https://https://vuttr.codar.space/check.svg"
+            as="image"
+          />
+          <link
+            rel="prefetch"
+            href="https://my-json-server.typicode.com/viniciusbmello/bossabox-json/tools?tags_like="
           />
           <meta charSet="utf-8" />
           {/* SEO Meta Tags */}
