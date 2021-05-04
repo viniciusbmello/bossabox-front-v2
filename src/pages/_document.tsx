@@ -43,8 +43,7 @@ export default class MyDocument extends Document {
           <link
             rel="preload"
             href="https://vuttr.codar.space/logo.svg"
-            as="image"
-            type="image/svg+xml"
+            as="fetch"
           />
           <meta charSet="utf-8" />
           {/* SEO Meta Tags */}
