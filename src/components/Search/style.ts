@@ -67,7 +67,6 @@ const Layout = styled.div`
   }
 
   label > span:first-child {
-    top: 0.2rem;
     left: 2.5rem;
     z-index: 1;
   }
@@ -78,9 +77,10 @@ const Layout = styled.div`
     height: 3rem;
   }
 
-  .searchIcon > svg {
+  .searchIcon > div {
     width: 1.6rem;
     height: 1.6rem;
+    position: relative;
   }
 
   @media screen and (max-width: 570px) {

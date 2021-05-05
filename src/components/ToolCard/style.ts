@@ -27,11 +27,13 @@ const Layout = styled.li`
     text-decoration: none;
   }
 
-  .card--title > svg {
+  .card--title > div {
     transform: rotate(15deg);
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 2.4rem;
+    height: 2.4rem;
     margin-left: 0.5rem;
+    position: relative;
+    display: inline-block;
   }
 
   .card--description {

@@ -1,19 +1,12 @@
-import { useRef, forwardRef } from 'react';
-import SVG, { Props as SVGProps } from 'react-inlinesvg';
 import Layout from './style';
 import { ITools } from '../../contexts/SearchContext';
 import Tag from '../Tag';
-
-const LinkIcon = forwardRef<SVGElement, SVGProps>((props, ref) => (
-  <SVG innerRef={ref} title="Search" {...props} />
-));
 
 interface IToolList {
   tool: ITools;
 }
 
 const ToolList: React.FC<IToolList> = ({ tool }: IToolList) => {
-  const linkIcon = useRef<SVGElement>(null);
   const { title, link, description, tags } = tool;
 
   return (
@@ -22,10 +15,7 @@ const ToolList: React.FC<IToolList> = ({ tool }: IToolList) => {
         <div className="card--header">
           {link ? (
             <a href={link} target="_blank" rel="noreferrer">
-              <h1 className="card--title">
-                {title}
-                <LinkIcon ref={linkIcon} src="/attach.svg" />
-              </h1>
+              <h1 className="card--title">{title}</h1>
             </a>
           ) : (
             <h1 className="card--title">{title}</h1>

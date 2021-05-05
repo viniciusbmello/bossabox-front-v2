@@ -1,16 +1,11 @@
-import { useRef, useState, forwardRef, useEffect } from 'react';
-import SVG, { Props as SVGProps } from 'react-inlinesvg';
+import { useState, useEffect } from 'react';
 import { NextComponentType } from 'next';
+import Image from 'next/image';
 import Layout from './style';
 
 import { useSearch } from '../../contexts/SearchContext';
 
-const SearchIcon = forwardRef<SVGElement, SVGProps>((props, ref) => (
-  <SVG innerRef={ref} title="Search" {...props} />
-));
-
 const SearchBar: NextComponentType = () => {
-  const searchIcon = useRef<SVGElement>(null);
   const context = useSearch();
   const [tagsOnly, setTagsOnly] = useState(context.onlyTags);
   const [inputValue, setInputValue] = useState(context.inputValue);
@@ -34,7 +29,14 @@ const SearchBar: NextComponentType = () => {
     <Layout className="header">
       <label htmlFor="search">
         <span className="searchIcon">
-          <SearchIcon ref={searchIcon} src="/search.svg" />
+          <div>
+            <Image
+              src="/search.svg"
+              layout="fill"
+              objectFit="contain"
+              quality={100}
+            />
+          </div>
         </span>
         <input
           id="search"

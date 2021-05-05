@@ -37,9 +37,10 @@ const Layout = styled.div`
     border-right: 1px solid ${props => props.theme.colors.mostDarkestWhite};
   }
 
-  .header--logo a > svg {
+  .header--logo a > div {
     width: 4rem;
     height: 4rem;
+    position: relative;
   }
 
   .header--title {
