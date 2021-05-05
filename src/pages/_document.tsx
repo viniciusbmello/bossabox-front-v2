@@ -40,6 +40,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt">
         <Head>
+          <link rel="preconnect" href="https://my-json-server.typicode.com" />
           <meta charSet="utf-8" />
           {/* SEO Meta Tags */}
           <meta itemProp="name" content="BossaBox Front-End VUTtR" />
