@@ -40,7 +40,7 @@ const Layout = styled.div`
   .header--logo a > div {
     background: ${props => props.theme.colors.red};
     width: 4rem;
-    padding-right: 2rem;
+    margin-left: 1rem;
   }
 
   .header--title {
